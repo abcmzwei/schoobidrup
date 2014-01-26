@@ -1,0 +1,48 @@
+name = schoobidrup
+core = 7.x
+description = Collaboration Platform based on Drupal for Kindergartens, Schools and High Schools
+
+; #######
+; schoobidrup
+; #######
+
+; Core  (schoobidrup)
+
+; Contrib  (schoobidrup)
+
+; CAPTCHA
+; project homepage: https://drupal.org/project/captcha
+; Project captcha contains 2 modules: image_captcha, captcha.
+dependencies[] = captcha
+dependencies[] = image_captcha
+
+; #######
+; panopoly_core
+; #######
+
+; leave at the end of the schoobidrup.profile file
+; Panopoly Foundation
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
+
+; Panopoly Toolset
+dependencies[] = panopoly_pages
+dependencies[] = panopoly_search
+dependencies[] = panopoly_wysiwyg
+
+; Panopoly Recommended - Admin
+dependencies[] = navbar
+dependencies[] = backports
+dependencies[] = simplified_menu_admin
+dependencies[] = save_draft
+dependencies[] = module_filter
+dependencies[] = date_popup_authored
+
+; Panopoly Recommended - Other
+dependencies[] = devel
+dependencies[] = uuid
