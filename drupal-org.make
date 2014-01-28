@@ -1,7 +1,11 @@
 api = 2
 core = 7.x
 
-; contributed modules, themes, and 3rd party libraries used by k12_scsm
+; #######
+; schoobidrup
+; #######
+
+; contributed modules used by schoobidrup
 
 ; CAPTCHA
 ; project homepage: https://drupal.org/project/captcha
@@ -9,6 +13,28 @@ core = 7.x
 projects[captcha][subdir] = "contrib"
 projects[captcha][version] = 1.0
 ; (20140113)
+
+; contributed 3rd party libraries used by schoobidrup
+
+
+; contributed themes used by schoobidrup
+
+; Radix
+; project homepage: https://drupal.org/project/radix
+projects[radix][type] = "theme"
+projects[radix][version] = 2.0-beta5
+; (20140113)
+
+; Open Atrium Radix
+; project homepage: https://drupal.org/project/oa_radix
+projects[oa_radix][type] = "theme"
+projects[oa_radix][version] = 2.11
+; (20140113)
+
+
+; #######
+; panopoly_core
+; #######
 
 ; leave at the end of the drupal-org.make file
 ; The Panopoly Foundation
