@@ -7,7 +7,7 @@ includes[] = drupal-org-core.make
 
 ; download the schoobidrup install profile and recursively build all its dependencies
 
-projects[k12_scsm][type] = "profile"
-projects[k12_scsm][download][type] = "git"
-projects[k12_scsm][download][url] = "https://github.com/abcmzwei/schoobidrup.git"
-projects[k12_scsm][download][branch] = "master"
+projects[schoobidrup][type] = "profile"
+projects[schoobidrup][download][type] = "git"
+projects[schoobidrup][download][url] = "https://github.com/abcmzwei/schoobidrup.git"
+projects[schoobidrup][download][branch] = "master"
