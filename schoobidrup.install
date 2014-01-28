@@ -1,3 +1,4 @@
+<?php
 /**
 * Implements hook_install_tasks().
 */
@@ -8,3 +9,4 @@ function schoobidrup_install_tasks($install_state) {
   $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'panopoly', 'default apps' => array('panopoly_demo')));
   return $tasks;
 }
+?>
