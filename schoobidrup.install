@@ -8,15 +8,6 @@ function schoobidrup_install() {
   // Allow visitor account creation, but with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 
-  // Enable default permissions for system roles.
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
-
-  // Grant default permissions for 'editor' role
-  if ($editor = user_role_load_by_name('editor')) {
-    user_role_grant_permissions($editor->rid, array('access navbar'));
-  }
-
   // Enable the default theme.
   $default_theme = 'oa_radix';
   theme_enable(array($default_theme));
@@ -39,3 +30,5 @@ function schoobidrup_install() {
     menu_link_save($menu_link);
   }
 }
+
+?>
